@@ -1,0 +1,106 @@
+/*初始化,如有用到并有遗留，可补充*/
+body, h1, h2, h3, h4, blockquote, p, dl, dt, dd, ul, ol, li, th, td,
+form, fieldset, legend, button, input, textarea {
+  margin: 0;
+  padding: 0
+}
+
+/*
+    设置默认字体，行高，初始化ie6下表单元素
+*/
+body, button, input, select, textarea {
+  font: 12px/1.5 \5b8b\4f53, arial, sans-serif
+}
+
+/* 标题继承字体大小，ie6下表单元素继承字体大小*/
+button, input, select, textarea, h1, h2, h3, h4 {
+  font-size: 100%
+}
+
+/* 扶正 */
+em, i {
+  font-style: normal
+}
+
+/* 去默认序列号 */
+ol, ul {
+  list-style: none outside;
+}
+
+/**
+*   表格边框合并，去边距，如不需要合并，
+*   请用border-collapse:separate;border-spacing:具体值覆盖此样式
+**/
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+/* 去默认边 */
+img, fieldset {
+  border: 0;
+  vertical-align: middle
+}
+
+/* 清浮，过渡写法，两种都可用，建议用第一种 */
+.clearfix:after {
+  content: "\20";
+  clear: both;
+  height: 0;
+  display: block;
+  overflow: hidden
+}
+
+.clearfix {
+  *zoom: 1
+}
+
+.clear {
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden
+}
+
+/* 网站特有写法，继承保留 */
+.fl, .mark {
+  float: left
+}
+
+.fr, .subMark {
+  float: right
+}
+
+.spanclass, .contentdiv {
+  display: none
+}
+
+/* 各网根据各网风格设置 相应色值 */
+a {
+  color: #000;
+  text-decoration: none
+}
+
+a:hover {
+  color: #c00;
+  text-decoration: underline
+}
+
+/*Zyra css*/
+.wrap {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+.inner {
+  position: relative;
+  left: -50%;
+}
+.header{
+  button{
+    border: none;
+  }
+}
